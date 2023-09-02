@@ -16,8 +16,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         MyAdapter myAdapter = new MyAdapter();
 
+        //ลูป for สำหรับเพิ่มข้อมูล
         for (int i = 0; i < 20; i++) {
             DataDao dataDao = new DataDao();
             dataDao.setText("index : " + i);
